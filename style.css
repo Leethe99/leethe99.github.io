@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: serif;
+}
+
+.navbar{
+  background-color: black;
+  padding: 25px 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+h2{
+  color: white;
+}
+a{
+  color: white;
+}
+
+.cart{
+  color: black;
+  background-color: white;
+  padding: 5px;
+  font-size: 30px;
+  border-radius: 5px;
+  position: relative;
+}
+.cartAmount{
+  font-size: 16px;
+  background-color: red;
+  color: white;
+  position: absolute;
+  top: -10px;
+  right: -4px;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.shop{
+  display: grid;
+  grid-template-columns: repeat(4,225px);
+  gap: 30px;
+  justify-content: center;
+}
+.item{
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+.details{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+
+.priceAndQuantity{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons{
+  display: flex;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.bi-dash-lg{
+  color: red;
+}
+.bi-plus-lg{
+  color: green;
+}
