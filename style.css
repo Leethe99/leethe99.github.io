@@ -2,10 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body{
-  font-family: serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .navbar{
@@ -18,6 +19,7 @@ body{
 }
 h2{
   color: white;
+  font-size: 50px;
 }
 a{
   color: white;
