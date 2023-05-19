@@ -45,19 +45,19 @@ a{
   border-radius: 3px;
 }
 
-.shop{
+.inv{
   display: grid;
   grid-template-columns: repeat(4,225px);
   gap: 30px;
   justify-content: center;
 }
 @media (max-width: 1000px){
-  .shop{
+  .inv{
     grid-template-columns: repeat(2,225px);
   }
 }
 @media (max-width: 500px){
-  .shop{
+  .inv{
     grid-template-columns: repeat(1,225px);
   }
 }
@@ -81,6 +81,16 @@ a{
   align-items: center;
 }
 
+.qDetails{
+  display: flex;
+  justify-content: space-between;
+}
+.quantity{
+  color: black;
+  align-items: right;
+  font-size: 20px;
+}
+
 .buttons{
   display: flex;
   gap: 8px;
@@ -92,4 +102,13 @@ a{
 }
 .bi-plus-lg{
   color: green;
+}
+img{
+  max-width: 220px;
+  max-height: 150px;
+  object-fit: contain;
+}
+i{
+
+  cursor: pointer;
 }
