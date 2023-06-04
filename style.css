@@ -1,114 +1,131 @@
-*{
+/* styles.css */
+
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+/* Set a background color and font styles */
+body {
+  background-color: #f1f1f1;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Add some spacing and center the text in the header */
+header {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the navigation menu */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
   text-decoration: none;
 }
 
-body{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-color: #cecece;
+/* Style the sections */
+section {
+  padding: 40px 20px;
 }
 
-.navbar{
-  background-color: black;
-  padding: 25px 60px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 30px;
-}
-h2{
-  color: white;
-  font-size: 50px;
-}
-a{
-  color: white;
+.container {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.cart{
-  color: black;
-  background-color: white;
-  padding: 5px;
-  font-size: 30px;
-  border-radius: 5px;
-  position: relative;
+h1, h2, h3 {
+  color: #333;
+  margin-bottom: 20px;
 }
-.cartAmount{
-  font-size: 16px;
-  background-color: red;
-  color: white;
-  position: absolute;
-  top: -10px;
-  right: -4px;
-  padding: 3px;
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+/* Style the projects section */
+.project {
+  margin-bottom: 20px;
+}
+
+.project h3 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.project p {
+  color: #777;
+}
+
+.project a {
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #ddd;
   border-radius: 3px;
 }
 
-.inv{
-  display: grid;
-  grid-template-columns: repeat(4,225px);
-  gap: 30px;
-  justify-content: center;
+/* Style the contact section */
+#contact ul li {
+  margin-bottom: 10px;
 }
-@media (max-width: 1000px){
-  .inv{
-    grid-template-columns: repeat(2,225px);
+
+/* Style the footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Media queries for responsiveness */
+
+/* Small devices (mobile phones) */
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .container {
+    padding: 0 20px;
   }
 }
-@media (max-width: 500px){
-  .inv{
-    grid-template-columns: repeat(1,225px);
+
+/* Medium devices (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .container {
+    max-width: 600px;
   }
 }
-.item{
-  border: 2px solid black;
-  border-radius: 4px;
-  background-color: white;
-}
 
-.details{
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  gap: 10px;
-}
-
-.priceAndQuantity{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.qDetails{
-  display: flex;
-  justify-content: space-between;
-}
-.quantity{
-  color: black;
-  align-items: right;
-  font-size: 20px;
-}
-
-.buttons{
-  display: flex;
-  gap: 8px;
-  font-size: 16px;
-}
-
-.bi-dash-lg{
-  color: red;
-}
-.bi-plus-lg{
-  color: green;
-}
-img{
-  max-width: 220px;
-  max-height: 150px;
-  object-fit: contain;
-}
-i{
-
-  cursor: pointer;
+/* Large devices (desktops) */
+@media only screen and (min-width: 1025px) {
+  .container {
+    max-width: 800px;
+  }
 }
