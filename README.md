@@ -1,3 +1,1 @@
-# algoritmos
-
-Proyecto de algorimos computonales 
+# Una historia acerca de mi
