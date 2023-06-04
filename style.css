@@ -1,4 +1,7 @@
 /* styles.css */
+html{
+  scroll-behavior: smooth;
+}
 
 /* Reset default margin and padding */
 body, h1, h2, h3, p, ul, li {
@@ -129,3 +132,59 @@ footer {
     max-width: 800px;
   }
 }
+
+
+/* animations */
+/* styles.css */
+
+/* Rest of your existing styles */
+
+/* Animation for fading in elements */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Apply fading in animation to sections */
+section {
+  animation: fade-in 1s ease-in-out;
+}
+
+/* Animation for sliding in elements from the left */
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Apply sliding in animation to projects */
+.project {
+  animation: slide-in-left 1s ease-in-out;
+}
+
+/* Animation for scaling up elements */
+@keyframes scale-up {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Apply scaling up animation to the header */
+header h1 {
+  animation: scale-up 1s ease-in-out;
+}
+
