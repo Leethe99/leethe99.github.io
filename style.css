@@ -17,29 +17,31 @@ body {
   line-height: 1.5;
 }
 
-/* Add some spacing and center the text in the header */
-header {
-  background-color: #333;
-  padding: 20px;
-  text-align: center;
-}
 
 /* Style the navigation menu */
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+
+
+nav {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  margin-bottom: 10px;
 }
 
-nav ul li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-nav ul li a {
-  color: #fff;
+nav a {
+  color: white;
   text-decoration: none;
+  margin: 0px 20px;
+  font-size: 1.3em;
 }
+
+nav a:hover {
+  text-decoration: underline;
+}
+
 
 /* Style the sections */
 section {
@@ -49,6 +51,8 @@ section {
 .container {
   max-width: 800px;
   margin: 0 auto;
+  margin-top: 40px;
+
 }
 
 h1, h2, h3 {
