@@ -1,89 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rafael Lee Vera</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Password Protected Page</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    max-width: 400px;
+    margin: 100px auto;
+    text-align: center;
+  }
+  input[type="password"] {
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #45a049;
+  }
+</style>
 </head>
-
 <body>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#projects">Projects</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-    <label class="switch">
-      <input type="checkbox">
-      <span class="slider round"></span>
-    </label>
-  </nav>
+<div class="container">
+  <h2>Enter Password</h2>
+  <input type="password" id="password" placeholder="Enter password">
+  <button onclick="checkPassword()">Submit</button>
+</div>
 
-  <section id="home">
-    <div class="container">
-      <h1>Welcome to My Portfolio</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae sollicitudin odio.</p>
-    </div>
-  </section>
+<script>
+function checkPassword() {
+  var password = document.getElementById('password').value;
+  // Change 'yourpassword' to the actual password you want to set
+  if (password === 'SoyHermosa') {
+    window.location.href = 'letter.html'; // Redirect to the unlocked page
+  } else {
+    alert('Incorrect password. Please try again.');
+  }
+}
+</script>
 
-  <section id="projects">
-    <!-- <div class="container">
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>Project 1</h3>
-        <p>This is a description of project 1.</p>
-        <a href="#">View Project</a>
-      </div>
-      <div class="project">
-        <h3>Project 2</h3>
-        <p>This is a description of project 2.</p>
-        <a href="#">View Project</a>
-      </div>
-    </div> -->
-    <main class="container">
-      <h1>All Of My Projects</h1>
-      <small>Some useful, some stupid, all fun!</small>
-      <section class="intro">
-          <div class="user-info"></div>
-      </section>
-
-      <section class="repos">
-          <input type="text" class="filter-repos hide" placeholder="Search Projects" />
-          <ul class="repo-list"></ul>
-      </section>
-  </main>
-
-  </section>
-
-  <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae sollicitudin odio. Nunc dictum vitae metus sed tristique. Fusce nec tincidunt lorem. Aliquam semper libero ligula, at tristique turpis gravida ac. Phasellus mattis placerat condimentum. Curabitur eleifend sollicitudin mauris eu fermentum. Vestibulum a fermentum neque, id semper velit. Mauris ac aliquam est.</p>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>If you'd like to get in touch, feel free to reach out to me:</p>
-      <ul>
-        <li>Email:<a href=mailto:“leerafavera45@gmail.com”>leerafavera45@gmail.com</a></li>
-        <li>Phone: 833-403-8274</li>
-        <!-- <li><a href="https://linkedin.com/your-profile">LinkedIn</a></li> -->
-        <!-- <li><a href="https://github.com/your-username">GitHub</a></li> -->
-      </ul>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <!-- <p>&copy; 2023 Your Name. All rights reserved.</p> -->
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
-
 </html>
